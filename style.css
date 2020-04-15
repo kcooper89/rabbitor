@@ -1,7 +1,66 @@
 #hr1 {
-    margin-top: 20px"
+    margin-bottom: 20px"
 }
 
 #hr2 {
-    margin-top: 50px">
+    margin-top: 50px"
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container-1 {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background-color: darkgray;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.container-1 h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+
+#questions {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#button1, #button2, #button3, #button4 {
+    background-color: lightgray;
+    width: 155px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px ;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+    cursor:pointer;
+    background-color: whitesmoke;
+}
+
+#button1:focus, #button2:focus, #button3:focus, #button4:focus {
+    outline: 0;
+}
+
+#progress {
+    color: black;
+    font-size: 15px;
+    
 }
