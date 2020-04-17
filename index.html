@@ -4,35 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    
 </head>
-
 <body>
 
-    <div class="container-1">
-        <div id="question-container">
-            <h1>The Coding Quiz!</h1>
-                
-                <hr id="hr1">
+    <div class="card text-center">
+        <div class="card-header">Welcome to the The Coding Quiz!
+          
+          <div id="timer"></div>
 
-            <p id="questions"></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          
+          <p id="question"></p>
 
-            <div class="buttons">
-                <button id="button1"><span id="choice-1"></span></button>
-                <button id="button2"><span id="choice-2"></span></button>
-                <button id="button3"><span id="choice-3"></span></button>
-                <button id="button4"><span id="choice-4"></span></button>
-            </div>
-    </div>
+          <p id="option-list"></p>
 
-    <hr id="hr2">
+        </div>
 
-    <footer>
+        <div id="question-result"></div>
 
-        <p id="progress">Question x of y</p>
+        <div>
+          <button id="start" class="btn btn-primary btn-lg" type="button">Start!</button>
+        </div> 
+              
+        <div class="card-footer text-muted" id="Score"></div>
+      
+        </div>
+      </div>
 
-    </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src = "script.js"></script>
 
 </body>
-
 </html>
