@@ -1,25 +1,56 @@
-#btn-1:hover, #btn-2:hover, #btn-3:hover, #btn-4:hover, #start:hover {
-    cursor:pointer;
-    background-color: whitesmoke;
+
+#restart {
+    background-color: green;
+    height: 70px;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
 }
 
-#btn-1:focus, #btn-2:focus, #btn-3:focus, #btn-4:focus, {
-    outline: 0;
-}
-
-.card-body {
-    margin-top: 150px;
-    margin-bottom: 100px;
-    margin-left: 175px;
-    margin-right: 175px;
+#clearScore {
     
+    background-color: blue;
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+}
+.card{
+    margin-top: 100px;
+    text-align: center;
+}
 
+.container-fluid {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.card-header {
+    font-weight: bold;
+    background-color: darkgray;
+    color: white;
+}
+.card-body {
+    margin-left: 135px;
+    margin-right: 135px; 
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
 }
 
 #start {
     margin-bottom: 100px;
 }
 
-#button {
-    margin: 2px;
+#question { 
+    display: block;
+    padding-top: 30px;
+}
+#option-list button {
+    margin-right: 5px;
+}
+
+.card-footer {
+    height: 60px;
+    background-color: darkgray;
+    color: white;
 }

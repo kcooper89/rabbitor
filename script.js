@@ -32,20 +32,39 @@ var questionEl = document.querySelector("#question");
 var optionListEl = document.querySelector("#option-list");
 var questionResultEl = document.querySelector("#question-result");
 var timerEl = document.querySelector("#timer");
+var start = document.querySelector ("#start");
 
 var questionIndex = 0;
 var correctCount = 0;
 
+
+
+
 var time = 30;
 var intervalId;
 
+//function for start quiz
+//hide the start screen, make a variable for the start screen. document.getElementbyId ("start") set attribute =.setAttribute. Hide it in this attribute.
+//unhide the questions
+//start timer 
+//renderQuestion. 
 
+function startQuiz () {
+  // start the time and show the question
+  renderQuestion ();
+
+  // remove the start button
+  start.parentNode.removeChild(start);
+}
 
 function endQuiz() {
     timerEl.innerHTML = "0";
     clearInterval(intervalId);
-    var body = document.body;
-    Score.innerHTML = "GAME OVER, You scored " + correctCount + " out of 5";
+
+    // redirect to highscore page
+    window.location.href = "/homework/week-4/rabbitor/highscore.html?score=" + correctCount;
+    // var body = document.body;
+    // Score.innerHTML = "GAME OVER, You scored " + correctCount + " out of 5";
   }
   
 function updateTime() {
@@ -79,7 +98,6 @@ function renderQuestion() {
       var questionListItem = document.createElement("button");
       questionListItem.textContent = choices[i];
       optionListEl.append(questionListItem);
-      //button.innerHTML += "<id=button"+i;" >"
     }
   }
   
@@ -96,11 +114,11 @@ function renderQuestion() {
     if (event.target.matches("button")) {
       var answer = event.target.textContent;
       if (answer === questions[questionIndex].Answer) {
-        questionResultEl.textContent = "Correct";
+        questionResultEl.textContent = "CORRECT!";
         correctCount++;
         time = time + 3;
       } else {
-        questionResultEl.textContent = "Incorrect";
+        questionResultEl.textContent = "WRONG";
         time = time - 2;
         timerEl.textContent = time;
       }
@@ -108,19 +126,16 @@ function renderQuestion() {
     setTimeout(nextQuestion, 2000);
   }
   
-  renderQuestion();
+  // renderQuestion();
   optionListEl.addEventListener("click", checkAnswer);
+
+ //function for showing high scores. need to use local storage. 
+ //create a veriable for the local storage of high scores. 
+ //when getting the high scores from local storage, must set ||[]
+ //sort the high scores descending order
+ //create a list 
   
+//create a function to redirect them to the very beginning.
+//create a function to empty the local storage. 
 
-//btn-1.innerHTML = "<h3>" + "hello" + "</h3>";
-
-//send test status
-//send back question along with the answers
-//capture user input + test after submitting
-//check to see if there are any questions left
-//grade them
-//submit back grade
-
-
-//add timer 
 
