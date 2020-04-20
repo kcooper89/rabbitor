@@ -62,7 +62,7 @@ function endQuiz() {
     clearInterval(intervalId);
 
     // redirect to highscore page
-    window.location.href = "kcooper89/rabbitor/blob/master/highscore.html?score=" + correctCount;
+    window.location.href = "https://github.com/kcooper89/rabbitor/blob/master/highscore.html?score=" + correctCount;
     // var body = document.body;
     // Score.innerHTML = "GAME OVER, You scored " + correctCount + " out of 5";
   }
